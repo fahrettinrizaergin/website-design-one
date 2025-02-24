@@ -1,50 +1,86 @@
-# React + TypeScript + Vite
+# Website Design One
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Modern ve kullanıcı dostu bir web sitesi tasarımı. Bu proje React, TypeScript ve Vite kullanılarak geliştirilmiş, performans ve kullanıcı deneyimini ön planda tutan bir web uygulamasıdır.
 
-Currently, two official plugins are available:
+## 🚀 Teknolojiler
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- React 18
+- TypeScript
+- Vite
+- React Router v7
+- Tailwind CSS
+- ESLint
+- SWC
 
-## Expanding the ESLint configuration
+## 🛠 Kurulum
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Projeyi yerel makinenizde çalıştırmak için aşağıdaki adımları izleyin:
 
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+1. Projeyi klonlayın:
+```bash
+git clone https://github.com/your-username/website-design-one.git
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+2. Proje dizinine gidin:
+```bash
+cd website-design-one
 ```
+
+3. Bağımlılıkları yükleyin:
+```bash
+npm install
+```
+
+4. Geliştirme sunucusunu başlatın:
+```bash
+npm run dev
+```
+
+## 📝 Kullanım
+
+Geliştirme sunucusu başlatıldıktan sonra, tarayıcınızda `http://localhost:5173` adresine giderek uygulamayı görüntüleyebilirsiniz.
+
+### Mevcut Sayfalar
+
+- `/` - Ana Sayfa
+- `/features` - Özellikler Sayfası
+- `/contact` - İletişim Sayfası
+
+## 🔧 Scripts
+
+- `npm run dev` - Geliştirme sunucusunu başlatır
+- `npm run build` - Projeyi production için derler
+- `npm run lint` - ESLint ile kod kontrolü yapar
+- `npm run preview` - Production build'i önizleme
+
+## 📁 Proje Yapısı
+
+```
+src/
+├── components/     # Yeniden kullanılabilir bileşenler
+├── pages/          # Sayfa bileşenleri
+├── assets/         # Statik dosyalar
+├── App.tsx         # Ana uygulama bileşeni
+└── main.tsx        # Uygulama giriş noktası
+```
+
+## 🎨 Özellikler
+
+- Modern ve responsive tasarım
+- Sayfa geçişlerinde smooth scroll
+- Gradient arka plan
+- React Router ile sayfa yönetimi
+- TypeScript ile tip güvenliği
+- Tailwind CSS ile stil yönetimi
+
+## 🤝 Katkıda Bulunma
+
+1. Bu repository'yi fork edin
+2. Feature branch'i oluşturun (`git checkout -b feature/amazing-feature`)
+3. Değişikliklerinizi commit edin (`git commit -m 'feat: Add amazing feature'`)
+4. Branch'inizi push edin (`git push origin feature/amazing-feature`)
+5. Pull Request oluşturun
+
+## 📄 Lisans
+
+Bu proje MIT lisansı altında lisanslanmıştır. Daha fazla bilgi için `LICENSE` dosyasına bakın.
