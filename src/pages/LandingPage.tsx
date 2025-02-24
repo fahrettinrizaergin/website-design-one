@@ -114,7 +114,7 @@ const LandingPage = () => {
                     </div>
 
                     {/* Payment Cards */}
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-20">
+                    <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mt-20">
                         <div className="bg-white/80 backdrop-blur-md p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100 group">
                             <div className="flex justify-between items-center mb-6">
                                 <div className="text-blue-600 bg-blue-50 p-3 rounded-xl group-hover:scale-110 transition-transform duration-300"><FaCreditCard size={28} /></div>
@@ -210,7 +210,7 @@ const LandingPage = () => {
                         <p className="text-gray-600 text-xl max-w-2xl mx-auto">Real-time statistics about our payment processing system</p>
                     </div>
 
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
                         {/* Starter Plan */}
                         <div className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100">
                             <div className="text-center mb-8">
@@ -308,7 +308,7 @@ const LandingPage = () => {
                         </h2>
                     </div>
 
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div className="grid grid-cols-1 lg:grid-cols-3  gap-8">
                         {/* Testimonial 1 */}
                         <div className="flex flex-col justify-between bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100">
                             <p className="text-gray-600 mb-6 italic">"Sanalpos pro eklentisi ile onlarca sitede kullanıyorum. Wordpress dünyasına kazandırılmış en yararlı ücretsiz eklentiye sahipler bu açıdan ne kadar takdir etsek az."</p>

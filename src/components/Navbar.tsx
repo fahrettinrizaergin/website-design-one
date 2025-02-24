@@ -47,7 +47,7 @@ export default function Navbar() {
                     </div>
 
                     {/* Mobile Menu */}
-                    <div className={`md:hidden transform transition-all duration-300 ${isMenuOpen ? 'scale-y-100 opacity-100' : 'scale-y-0 opacity-0'} origin-top py-4`}>
+                    <div className={`md:hidden transform transition-all duration-300 ${isMenuOpen ? 'scale-y-100 opacity-100 h-auto' : 'scale-y-0 opacity-0 h-0'} origin-top overflow-hidden`}>
                         <div className="flex flex-col space-y-4">
                             <Link to="/" className="text-gray-600 hover:text-blue-600 transition-colors duration-300 py-2 px-4 rounded-lg hover:bg-blue-50 font-medium">Home</Link>
                             <Link to="/features" className="text-gray-600 hover:text-blue-600 transition-colors duration-300 py-2 px-4 rounded-lg hover:bg-blue-50 font-medium">Features</Link>
